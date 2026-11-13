@@ -108,7 +108,7 @@ export function DemoSection() {
             </p>
           </Reveal>
           <Reveal delay={0.2} className="flex flex-col gap-1.5 text-base font-bold">
-            <p>Dallas, TX</p>
+            <p>Denver, TX</p>
             <a href="mailto:info@Consultantsrus.com" className="w-fit text-navy-900 underline decoration-navy-900/30 underline-offset-4 hover:decoration-navy-900">
               info@Consultantsrus.com
             </a>
