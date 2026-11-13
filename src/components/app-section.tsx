@@ -2,8 +2,9 @@
 
 import { useState } from "react";
 import { motion, useReducedMotion } from "motion/react";
-import { APP_STORE_URL } from "./data";
-import { Button, Reveal } from "./ui";
+import { APP_STORE_URL, PLAY_STORE_URL } from "./data";
+import { StoreButton } from "./store-button";
+import { Reveal } from "./ui";
 
 const PHONE_PEOPLE = [
   { name: "Sid Michael", role: "Oil Rig Operator", years: 3 },
@@ -112,15 +113,8 @@ export function AppSection() {
             </p>
           </Reveal>
           <Reveal delay={0.2} className="flex flex-wrap gap-3">
-            <Button href={APP_STORE_URL} target="_blank" rel="noopener noreferrer">
-              Download for iPhone
-            </Button>
-            <span
-              aria-disabled="true"
-              className="inline-flex min-h-[50px] items-center rounded-lg border border-line px-6 text-[15px] font-bold text-muted"
-            >
-              Google Play · coming soon
-            </span>
+            <StoreButton store="apple" href={APP_STORE_URL} />
+            <StoreButton store="google" href={PLAY_STORE_URL} />
           </Reveal>
           <Reveal delay={0.3}>
             <p className="text-sm text-muted">Tip: tap the stars on the phone to shortlist a consultant.</p>

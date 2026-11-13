@@ -1,6 +1,9 @@
 export const APP_STORE_URL =
   "https://apps.apple.com/us/app/consultants-r-us/id6757849113";
 
+export const PLAY_STORE_URL =
+  "https://play.google.com/store/apps/details?id=com.dignitestudios.consultants_r_us";
+
 export const NAV = [
   { id: "audience", label: "Who It's For" },
   { id: "how", label: "How It Works" },
