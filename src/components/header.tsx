@@ -11,6 +11,8 @@ import {
 import { NAV } from "./data";
 import { Button, LogoMark } from "./ui";
 
+const COMPANY_PANEL_URL = "https://company.consultantsrus.co/";
+
 export function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
@@ -97,6 +99,13 @@ export function Header() {
           </nav>
 
           <div className="flex items-center gap-3">
+            <Button
+              href={COMPANY_PANEL_URL}
+              variant="outline"
+              className="max-lg:!hidden !min-h-11"
+            >
+              Company Panel
+            </Button>
             <Button href="#demo" className="max-sm:!hidden !min-h-11">
               Book a Demo
             </Button>
@@ -159,6 +168,9 @@ export function Header() {
                   className="mt-4"
                 >
                   Book a Demo
+                </Button>
+                <Button href={COMPANY_PANEL_URL} variant="outline" className="mt-3">
+                  Go to Company Panel
                 </Button>
               </div>
             </motion.nav>
