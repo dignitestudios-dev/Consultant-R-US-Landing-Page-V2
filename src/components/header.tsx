@@ -101,7 +101,6 @@ export function Header() {
           <div className="flex items-center gap-3">
             <Button
               href={COMPANY_PANEL_URL}
-              variant="outline"
               className="max-lg:!hidden !min-h-11"
             >
               Company Panel
@@ -169,7 +168,7 @@ export function Header() {
                 >
                   Book a Demo
                 </Button>
-                <Button href={COMPANY_PANEL_URL} variant="outline" className="mt-3">
+                <Button href={COMPANY_PANEL_URL} className="mt-3">
                   Go to Company Panel
                 </Button>
               </div>
